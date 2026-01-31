@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harry Potter Gen AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <h1 class="text-center text-warning">🧙‍♂️ Harry Potter Text Generator</h1>
+        <div class="card bg-secondary mt-4">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Enter Prompt:</label>
+                        <input type="text" name="prompt" class="form-control" placeholder="e.g., harry potter" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Temperature (Creativity):</label>
+                        <input type="range" name="temperature" class="form-range" min="0.5" max="1.5" step="0.1" value="1.0">
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">✨ Cast Spell (Generate)</button>
+                </form>
+            </div>
+        </div>
+        {% if result %}
+        <div class="mt-4 p-3 border rounded bg-light text-dark">
+            <h5>Generated Text:</h5>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

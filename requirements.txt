@@ -1,0 +1,13 @@
+jupyterlab
+ipykernel
+matplotlib
+pandas
+numpy
+scikit-learn
+tqdm
+datasets      
+portalocker    
+streamlit      
+watchdog
+flask
+nltk
