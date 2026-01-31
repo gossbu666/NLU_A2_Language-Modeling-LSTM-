@@ -33,18 +33,21 @@ Below is the screenshot of the Web Application interface demonstrating the text 
 
 ---
 
-## 📂 Repository Structure
-. ├── notebooks/ # Jupyter Notebooks for training 
-│ └── st126055_Supanut_Kompayak_NLU_A2.ipynb 
-├── templates/ # HTML templates for Flask 
-│ └── index.html 
-├── app.py # Flask Application entry point 
-├── Dockerfile # Docker configuration 
-├── docker-compose.yml # Service orchestration 
-├── requirements.txt # Python dependencies 
-├── model_v2.pth # Trained LSTM Model (Best Weights) 
-├── vocab_v2.pth # Processed Vocabulary Object 
-└── README.md # Project Documentation
+## 📁 Repository Structure
+```
+.
+├── notebooks/                            # Jupyter Notebooks for training
+│   └── st126055_Supanut_Kompayak_NLU_A2.ipynb
+├── templates/                            # HTML templates for Flask
+│   └── index.html
+├── app.py                                # Flask Application entry point
+├── Dockerfile                            # Docker configuration
+├── docker-compose.yml                    # Service orchestration
+├── requirements.txt                      # Python dependencies
+├── model_v2.pth                          # Trained LSTM Model (Best Weights)
+├── vocab_v2.pth                          # Processed Vocabulary Object
+└── README.md                             # Project Documentation
+```
 
 ## 🛠️ How to Run
 
